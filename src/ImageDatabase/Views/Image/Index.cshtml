@@ -1,0 +1,10 @@
+﻿@model ImageDatabase.ViewModels.Image.IndexViewModel
+
+<div class="row">
+	@foreach (var img in Model.Images)
+	{
+		<div class="col-lg-10" style="margin-top:30px;margin-bottom:20px;" >
+			<img class ="img-responsive" src="@img.ImageSource" />
+		</div>
+	}
+</div>
